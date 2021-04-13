@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/12816/Documents/School/Junior-Year/Spring-2021/CS-3353/Project3/21s-pa03-grantayers_mikecuzzo/src/reader.cpp
+reader.hpp
+/mnt/c/Users/12816/Documents/School/Junior-Year/Spring-2021/CS-3353/Project3/21s-pa03-grantayers_mikecuzzo/src/reader.hpp
+vector
+-
+boost/tuple/tuple.hpp
+-
+string
+-
+iostream
+-
+fstream
+-
+
+/mnt/c/Users/12816/Documents/School/Junior-Year/Spring-2021/CS-3353/Project3/21s-pa03-grantayers_mikecuzzo/src/reader.hpp
+vector
+-
+boost/tuple/tuple.hpp
+-
+string
+-
+fstream
+-
+
