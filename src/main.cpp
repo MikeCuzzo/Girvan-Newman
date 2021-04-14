@@ -6,6 +6,6 @@
 using namespace std;
 
 int main(){
-    Reader r = Reader("../data/put_data_here.txt");
+    Reader r = Reader("../data/");
     return 0;
 }

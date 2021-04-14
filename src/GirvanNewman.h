@@ -23,6 +23,7 @@
 #include <boost/graph/graph_utility.hpp>
 #include <boost/graph/named_function_params.hpp>
 #include <boost/graph/visitors.hpp>
+#include <boost/graph/bc_clustering.hpp>
 
 using namespace std;
 using namespace boost;
@@ -31,7 +32,9 @@ class GirvanNewman {
 public:
     GirvanNewman(vector<boost::tuple<char, char>>);
     void findBetweenness();
-    void dijkstra();
+    void findCommunities(vector<double>);
+    vector<int> dijkstra(int);
+    vector<vector<int>> getCommunities();
 private:
     // typedefs
     typedef boost::property<boost::edge_weight_t, int> EdgeWeightProperty;
@@ -40,7 +43,9 @@ private:
     typedef graph_traits<Graph>::vertex_descriptor Vertex;
     //graph
     Graph g;
-
+    vector<boost::tuple<char, char>> edges;
+    vector<vector<int>> communities;
+    int center = -1;
 };
 
 

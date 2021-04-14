@@ -8,7 +8,7 @@ Reader::Reader(){
 
 Reader::Reader(string path){
     ifstream infile;
-    infile.open(path);
+    infile.open(path+"put_data_here.txt");
     string buffer;
     getline(infile, buffer);
     int size = stoi(buffer);
@@ -22,6 +22,22 @@ Reader::Reader(string path){
 
     //runs girvan newman
     GirvanNewman girvan = GirvanNewman(data);
+    vector<vector<int>> communities = girvan.getCommunities();
+
+    ofstream outfile;
+    outfile.open(path+"output.txt");
+    //outputs communities
+    for (int i =0; i<communities.size();i++){
+        if(!communities[i].empty()) {
+            outfile << "Community " << i << endl << i << " -> ";
+            for (int j = 0; j < communities[i].size(); j++) {
+                outfile << communities[i][j] << " ";
+            }
+            outfile << endl << endl;
+        }
+    }
+
+    outfile.close();
 }
 
 vector<boost::tuple<char,char>> Reader::getData(){

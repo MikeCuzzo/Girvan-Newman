@@ -1,0 +1,6 @@
+Community 0
+0 -> 3 4 5 6 
+
+Community 5
+5 -> 0 1 2 3 
+
