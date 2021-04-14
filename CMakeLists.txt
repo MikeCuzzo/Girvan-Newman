@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
 set(Sources src/main.cpp
             src/reader.hpp
-            src/reader.cpp)
+            src/reader.cpp src/GirvanNewman.cpp src/GirvanNewman.h)
 
 FIND_PACKAGE(Boost)
 

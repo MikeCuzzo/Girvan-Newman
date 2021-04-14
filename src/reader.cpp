@@ -1,13 +1,7 @@
 #include "reader.hpp"
-#include <vector>
-#include <boost/tuple/tuple.hpp>
-#include <string>
-#include <iostream>
-#include <fstream>
-
-using namespace std;
 
 Reader::Reader(){
+    //reads file
     data.push_back(boost::make_tuple('a', 'f'));
     print();
 }
@@ -25,6 +19,9 @@ Reader::Reader(string path){
     }
     infile.close();
     print();
+
+    //runs girvan newman
+    GirvanNewman girvan = GirvanNewman(data);
 }
 
 vector<boost::tuple<char,char>> Reader::getData(){
@@ -36,3 +33,4 @@ void Reader::print(){
         cout << "(" << data[i].get<0>() << ", " << data[i].get<1>() << ")" << endl;
     }
 }
+

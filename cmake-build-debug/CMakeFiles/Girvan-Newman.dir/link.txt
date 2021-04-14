@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++17 -g CMakeFiles/Girvan-Newman.dir/src/main.cpp.o CMakeFiles/Girvan-Newman.dir/src/reader.cpp.o CMakeFiles/Girvan-Newman.dir/src/GirvanNewman.cpp.o -o Girvan-Newman 
