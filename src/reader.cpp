@@ -18,7 +18,7 @@ Reader::Reader(string path){
         data.push_back(boost::make_tuple(buffer[0], buffer[4]));
     }
     infile.close();
-    print();
+    //print();
 
     //runs girvan newman
     GirvanNewman girvan = GirvanNewman(data);

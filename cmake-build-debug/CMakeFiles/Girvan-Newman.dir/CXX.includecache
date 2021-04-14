@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/GirvanNewman.cpp
+GirvanNewman.h
+/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/GirvanNewman.h
+
 /home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/GirvanNewman.h
 boost/tuple/tuple.hpp
 -
@@ -17,11 +21,15 @@ utility
 -
 algorithm
 -
+iterator
+-
 boost/graph/graph_traits.hpp
 -
 boost/graph/adjacency_list.hpp
 -
 boost/graph/dijkstra_shortest_paths.hpp
+-
+boost/graph/breadth_first_search.hpp
 -
 boost/config.hpp
 -
@@ -35,32 +43,8 @@ queue
 /home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/queue
 boost/graph/graph_utility.hpp
 -
-
-/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/main.cpp
-iostream
+boost/graph/named_function_params.hpp
 -
-vector
+boost/graph/visitors.hpp
 -
-reader.hpp
-/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/reader.hpp
-boost/tuple/tuple.hpp
--
-
-/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/reader.cpp
-reader.hpp
-/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/reader.hpp
-
-/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/reader.hpp
-vector
--
-boost/tuple/tuple.hpp
--
-string
--
-fstream
--
-GirvanNewman.h
-/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/GirvanNewman.h
-iostream
-/home/mcuzzo/Desktop/21s-pa03-grantayers_mikecuzzo/src/iostream
 
